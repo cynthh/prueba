@@ -4,11 +4,6 @@ class DTFecha{
 	    int dia, mes, anio;
     public:
         DTFecha(int dia, int mes, int anio);
-        int getDia();
-        void setDia(int dia);
-        int getMes();
-        void setMes(int mes);
-        int getAnio();
-        void setAnio(int anio);
+        int compararDTFechas(DTFecha fecha1, DTFecha fecha2);
 };
 

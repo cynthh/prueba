@@ -18,6 +18,7 @@ class Estudiante{
 		void setCi(int ci);
 		string getEmail();
 		void setEmail(string email);
+        ~Estudiante();
 
 		string toString();
 
