@@ -3,6 +3,7 @@
 DTFecha::DTFecha(int dia, int mes, int anio){
     this->dia=dia;
     this->mes=mes; 
+    this->anio = anio;
 }
 int DTFecha::compararDTFechas(DTFecha fecha1, DTFecha fecha2){
 	int res = 0;
