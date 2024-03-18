@@ -1,7 +1,4 @@
 #include "Estudiante.h"
-//#include<iostream>
-//#include<stdlib.h>
-//using namespace std;
 
 Estudiante::Estudiante(string nombre, int ci, string email){
 	this->ci = ci;
