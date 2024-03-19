@@ -3,13 +3,13 @@ OBJ_DIR = ../obj
 BIN_DIR = ../bin
 INC_DIR = ../inc
 SRC_DIR = ../src
-OBJS    = $(OBJ_DIR)/Estudiante.o
-		  $(OBJ_DIR)/Informacion.o
-		  $(OBJ_DIR)/DTInfoEstudiante.o
-		  $(OBJ_DIR)/DTFecha.o
-		  $(OBJ_DIR)/chatGPT.o
-		  $(OBJ_DIR)/Libro.o
-		  $(OBJ_DIR)/PaginaWeb.o
+OBJS    = $(OBJ_DIR)/Estudiante.o \
+		  $(OBJ_DIR)/Informacion.o \
+		  $(OBJ_DIR)/DTInfoEstudiante.o \
+		  $(OBJ_DIR)/DTFecha.o \
+		  $(OBJ_DIR)/chatGPT.o \
+		  $(OBJ_DIR)/Libro.o \
+		  $(OBJ_DIR)/PaginaWeb.o \
 		  $(OBJ_DIR)/utils.o
 
 CFLAGS = -Wall -I$(INC_DIR)
@@ -26,4 +26,4 @@ $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
 
 .PHONY: clean
 clean :
-	@rs -r $(OBJ_DIR) $(BIN_DIR)
+	@rm -r $(OBJ_DIR) $(BIN_DIR)
