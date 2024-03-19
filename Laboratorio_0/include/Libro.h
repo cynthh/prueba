@@ -5,7 +5,7 @@
 #include <string>
 #include "Informacion.h"
 #include "DTFecha.h"
-#include "DTInfoEstudiante.H"
+#include "DTInfoEstudiante.h"
 using namespace std;
 
 class Libro
@@ -19,5 +19,5 @@ public:
     string getAutores(string autores);
     string getResumen(string resumen);
     void resumen(string resumen);
-    string toString(int id, *DTFecha, string titulo, string autores, string resumen);
+    string toString();
 }
