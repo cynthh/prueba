@@ -30,3 +30,4 @@ string toString(PaginaWeb pagina){
     string res = "PáginaWeb: " + this->Identificador +", "+ this->Fecha +", "+ this->Titulo +", "+ this->Link +", "+ this->Text +".";
     return res;
 }
+
