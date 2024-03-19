@@ -50,5 +50,5 @@ void Libro::resumen()
 
 string Libro::toString()
 {
-	return " " + getIdentificador() "," + getFecha() + "," + this->titulo + "," + this->autores + "," + this->resumen;
+	return " " + to_string(getIdentificador()) "," + getFecha()->toString() + "," + this->titulo + "," + this->autores + "," + this->resumen;
 }
