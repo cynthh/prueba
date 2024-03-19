@@ -1,9 +1,14 @@
 #include "PaginaWeb.h"
 #include <stl>
 
-PaginaWeb() void setTitulo(string Titulo, PaginaWeb pagina)
-{
-	this->Titulo = Titulo;
+PaginaWeb : PaginaWeb(string Titulo, Link, Text) : Informacion(id, DTFecha){
+    this->Titulo = Titulo;
+    this->Link = Link;
+    this->Text = Text;
+}
+
+void setTitulo(string Titulo, PaginaWeb pagina){
+    this->Titulo = Titulo;
 }
 
 string getTitulo(PaginaWeb pagina)
@@ -31,8 +36,7 @@ string getText(PaginaWeb pagina)
 	return this->Text;
 }
 
-string toString(PaginaWeb pagina)
-{
-	string res = "PáginaWeb: " + this->Identificador + ", " + this->Fecha + ", " + this->Titulo + ", " + this->Link + ", " + this->Text + ".";
-	return res;
+string toString(PaginaWeb pagina){
+    return "PáginaWeb: " + to_string(getIdentificador(pagina)) +", "+ to_string(getFecha(pagina)) +", "+ this->Titulo +", "+ this->Link +", "+ this->Text +".";
+    
 }
