@@ -39,4 +39,5 @@ string getText(PaginaWeb pagina)
 string toString(PaginaWeb pagina){
     return "PáginaWeb: " + to_string(getIdentificador(pagina)) +", "+ to_string(getFecha(pagina)) +", "+ this->Titulo +", "+ this->Link +", "+ this->Text +".";
     
+    
 }
