@@ -6,7 +6,7 @@ class PaginaWeb: public Informacion{
     string Titulo, Link, Text;
     public: 
     string toString();
-    PaginaWeb(string Titulo, Link, Text);\
+    PaginaWeb(string Titulo, Link, Text, int Identificador, *DTFecha Fecha);
     void setTitulo();
     string getTitulo();
     void setLink();
