@@ -14,6 +14,7 @@ private:
     *DTFecha Fecha;
 
 public:
+    Informacion(int id, DTFecha* fecha);
     int getIdentificador();
     *DTFecha getFecha();
     virtual string toString();

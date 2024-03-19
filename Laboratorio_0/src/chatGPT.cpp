@@ -1,6 +1,6 @@
 #include "chatGPT.h"
 
-chatGPT::chatGPT(string pregunta, string respuesta) {
+chatGPT::chatGPT(int id, DTFecha* fecha, string pregunta, string respuesta) : Informacion(id, fecha){
     this->pregunta = pregunta;
     this->respuesta = respuesta;
     

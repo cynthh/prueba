@@ -9,7 +9,7 @@ class chatGPT : public Informacion{
 private:
     string pregunta, repuesta;
 public:
-    chatGPT(string pregunta, string respuesta);
+    chatGPT(int id, DTFecha* fecha, string pregunta, string respuesta);
     ~chatGPT();
     string getPregunta();
     string getRespuesta();
