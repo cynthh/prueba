@@ -21,3 +21,7 @@ int DTFecha::compararDTFechas(DTFecha fecha1, DTFecha fecha2)
     }
     return res;
 }
+
+string DTFecha::toString(){
+    return to_string(this->dia) + "/" + to_string(this->mes) + "/" + to_string(this->anio);
+}
