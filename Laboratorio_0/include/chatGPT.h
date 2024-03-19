@@ -7,7 +7,7 @@ using namespace std;
 
 class chatGPT : public Informacion{
 private:
-    string pregunta, repuesta;
+    string pregunta, respuesta;
 public:
     chatGPT(int id, DTFecha* fecha, string pregunta, string respuesta);
     ~chatGPT();
