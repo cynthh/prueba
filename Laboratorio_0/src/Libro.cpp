@@ -3,13 +3,6 @@
 #include "Estudiante.h"
 #include "DTFecha.h"
 
-// Libro(string titulo, string autores, string resumen);
-// string getTitulo();
-// void setTitulo();
-// string getAutores();
-// void setAutores();
-// string getResumen();
-// void getResumen();
 // void resumen(string resumen);
 // string toString();
 
@@ -24,16 +17,41 @@ Libro::~Libro()
 {
 }
 
-string getTitulo(string titulo)
+string Libro::getTitulo()
 {
-	return titulo;
+	return this->titulo;
 }
 
-string getAutores(string autores)
+void Libro::setTitulo(string titulo)
 {
-	return autores;
+	this->titulo = titulo;
 }
-string getResumen(string resumen)
+
+string Libro::getAutores()
 {
-	return resumen;
+	return this->autores;
+}
+
+void Libro::setAutores(string autores)
+{
+	this->autores = autores;
+}
+
+string Libro::getResumen()
+{
+	return this->resumen;
+}
+
+void Libro::setResumen(string resumen)
+{
+	this->resumen = resumen;
+}
+
+void Libro::resumen()
+{
+}
+
+string Libro::toString()
+{
+	return " " + getIdentificador() "," + getFecha() + "," + this->titulo + "," + this->autores + "," + this->resumen;
 }

@@ -20,7 +20,7 @@ public:
     string getAutores();
     void setAutores();
     string getResumen();
-    void getResumen();
+    void setResumen();
     void resumen(string resumen);
     string toString();
 }
