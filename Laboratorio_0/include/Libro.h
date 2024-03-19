@@ -15,9 +15,12 @@ private:
 
 public:
     Libro(string titulo, string autores, string resumen);
-    string getTitulo(string titulo);
-    string getAutores(string autores);
-    string getResumen(string resumen);
+    string getTitulo();
+    void setTitulo();
+    string getAutores();
+    void setAutores();
+    string getResumen();
+    void getResumen();
     void resumen(string resumen);
     string toString();
 }

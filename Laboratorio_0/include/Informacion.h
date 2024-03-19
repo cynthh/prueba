@@ -14,7 +14,7 @@ private:
     *DTFecha Fecha;
 
 public:
-    Identificador();
+    Identificador(id Identificador, *DTFecha fecha);
     int getIdentificador();
     *DTFecha getFecha();
     virtual string toString();
