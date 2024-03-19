@@ -1,7 +1,4 @@
-#include "Informacion.h"
 #include "Libro.h"
-#include "Estudiante.h"
-#include "DTFecha.h"
 
 // void resumen(string resumen);
 // string toString();
