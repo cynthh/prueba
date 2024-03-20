@@ -12,15 +12,16 @@ OBJS    = $(OBJ_DIR)/Estudiante.o \
 		  $(OBJ_DIR)/PaginaWeb.o \
 		  $(OBJ_DIR)/utils.o
 
-CFLAGS = -Wall -I$(INC_DIR)
+CPP = g++
+CPPFLAGS = -Wall -I$(INC_DIR)
 
 $(TARGET) : $(OBJS)
 	mkdir -p $(BIN_DIR)
-	gcc $(CFLAGS) $(OBJS) -o $(TARGET)
+	@$(CPP) $(CPPFLAGS) $(OBJS) -o $(TARGET)
 
 $(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
 	mkdir -p $(OBJ_DIR)
-	gcc -c -MD $(CFLAGS) $< -o $@
+	$(CPP) -c -MD $(CPPFLAGS) $< -o $@
 
 -include $(OBJ_DIR)/*.d
 
