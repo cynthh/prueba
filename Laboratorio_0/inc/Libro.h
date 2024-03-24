@@ -8,20 +8,20 @@
 #include "DTInfoEstudiante.h"
 using namespace std;
 
-class Libro
+class Libro: public Informacion
 {
 private:
     string titulo, autores, resumen;
 
 public:
-    Libro(string titulo, string autores, string resumen);
+    bool Libro(string titulo, string autores, string resumen);
     string getTitulo();
-    void setTitulo();
+    void setTitulo(string titulo);
     string getAutores();
-    void setAutores();
+    void setAutores(string autores);
     string getResumen();
-    void setResumen();
-    void resumen(string resumen);
+    void setResumen(string resumen);
+    bool resumen(string resumen);
     string toString();
     void setId(int Id);
     string getId(int id);

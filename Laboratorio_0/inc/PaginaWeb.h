@@ -1,6 +1,12 @@
+#pragma once
+#include<iostream>
+#include<stdlib.h>
 #include <string>
+#include <stl>
+#include "DTFecha.h"
+#include "DTInfoEstudiante.h"
 #include "Informacion.h"
-
+using namespace std;
 class PaginaWeb: public Informacion{
     private:
     string Titulo, Link, Text;
