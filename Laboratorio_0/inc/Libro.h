@@ -23,4 +23,6 @@ public:
     void setResumen();
     void resumen(string resumen);
     string toString();
+    void setId(int Id);
+    string getId(int id);
 }
