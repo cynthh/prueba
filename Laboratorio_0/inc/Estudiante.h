@@ -4,6 +4,7 @@
 #include <stl>
 #include <string>
 #include "DTFecha.h"
+#include "Informacion.h"
 using namespace std;
 
 class Estudiante{
@@ -12,16 +13,16 @@ class Estudiante{
 		int ci;
 	public:
 		Estudiante(string nombre, int ci, string email);
+		~Estudiante();
 		string getNombre();
 		void setNombre(string nombre);
 		int getCi();
 		void setCi(int ci);
 		string getEmail();
 		void setEmail(string email);
-        ~Estudiante();
-
 		string toString();
-
+		void setId(int Id);
+    	int getId(int id);
 		set<string> listarInfo(DTFecha& Desde);
 
 };
