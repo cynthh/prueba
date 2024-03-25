@@ -6,6 +6,7 @@
 #include "Informacion.h"
 #include "DTFecha.h"
 #include "DTInfoEstudiante.h"
+
 using namespace std;
 
 class Libro: public Informacion{
