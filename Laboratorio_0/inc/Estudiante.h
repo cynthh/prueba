@@ -9,6 +9,8 @@
 #include "Informacion.h"
 using namespace std;
 
+class Informacion;
+
 class Estudiante{
 	private: 
 		string nombre, email;

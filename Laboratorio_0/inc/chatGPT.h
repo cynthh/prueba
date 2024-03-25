@@ -22,8 +22,6 @@ public:
     void setPregunta(string);
     void setRespuesta(string);
     string toString();
-    void setId(int Id);
-    int getId(int id);
 };
 
 #endif 
