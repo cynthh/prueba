@@ -1,6 +1,6 @@
 #include <iostream>
-#include "../inc/Libro.h"
-#include "../inc/DTFecha.h"
+#include "inc/Libro.h"
+#include "inc/DTFecha.h"
 #include <set>
 
 int main() {

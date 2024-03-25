@@ -19,15 +19,9 @@ private:
 public:
     Libro(int id, DTFecha fecha, string titulo, set<string>& autores, string resumen);
     string getTitulo();
-    //void setTitulo(string titulo);
     set<string> getAutores();
-    //void setAutores(string autores);
     string getResumen();
-    //void setResumen(string resumen);
-    //bool resumen(string resumen);
     string toString();
-    //void setId(int Id);
-    //int getId(int id);
 };
 
 #endif
