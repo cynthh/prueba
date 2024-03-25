@@ -1,7 +1,9 @@
-#pragma once
+#ifndef ESTUDIANTE_H
+#define ESTUDIANTE_H
+
 #include<iostream>
 #include<stdlib.h>
-#include <stl>
+#include <set>
 #include <string>
 #include "DTFecha.h"
 #include "Informacion.h"
@@ -13,7 +15,7 @@ class Estudiante{
 		int ci;
 	public:
 		Estudiante(string nombre, int ci, string email);
-		~Estudiante();
+		//~Estudiante();
 		string getNombre();
 		void setNombre(string nombre);
 		int getCi();
@@ -21,8 +23,9 @@ class Estudiante{
 		string getEmail();
 		void setEmail(string email);
 		string toString();
-		void setId(int Id);
-    	int getId(int id);
+		//void setId(int Id);
+    	//int getId(int id);
 		set<string> listarInfo(DTFecha& Desde);
 
 };
+#endif

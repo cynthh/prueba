@@ -1,4 +1,4 @@
-#include "chatGPT.h"
+#include "../inc/chatGPT.h"
 
 chatGPT::chatGPT(int id, DTFecha* fecha, string pregunta, string respuesta) : Informacion(id, fecha){
     this->pregunta = pregunta;

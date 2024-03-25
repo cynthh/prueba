@@ -1,8 +1,9 @@
-#pragma once
+#ifndef DTINFOESTUDIANTE_H
+#define DTINFOESTUDIANTE_H
 #include<iostream>
 #include<stdlib.h>
 #include <string>
-#include <stl>
+#include <set>
 #include "DTFecha.h"
 #include "DTInfoEstudiante.h"
 #include "Informacion.h"
@@ -14,4 +15,4 @@ private:
 public:
     DTInfoEstudiante(int ci, int identificadorInfo, string NombreEst);
 };
-
+#endif

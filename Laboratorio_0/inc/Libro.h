@@ -1,7 +1,9 @@
-#pragma once
+#ifndef LIBRO_H
+#define LIBRO_H
+
 #include <iostream>
 #include <stdlib.h>
-#include <stl>
+#include <set>
 #include <string>
 #include "Informacion.h"
 #include "DTFecha.h"
@@ -26,4 +28,6 @@ public:
     string toString();
     //void setId(int Id);
     //int getId(int id);
-}
+};
+
+#endif

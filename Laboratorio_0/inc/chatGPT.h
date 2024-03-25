@@ -1,4 +1,6 @@
-#pragma once
+#ifndef chatGPT_H
+#define chatGPT_H
+
 #include<iostream>
 #include<stdlib.h>
 #include <string>
@@ -21,3 +23,4 @@ public:
     string toString();
 };
 
+#endif 

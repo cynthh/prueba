@@ -1,22 +1,25 @@
-#pragma once
+#ifndef INFORMACION_H
+#define INFORMACION_H
+
 #include <iostream>
 #include <stdlib.h>
-#include <stl>
+#include <set>
 #include <string>
 #include "DTFecha.h"
 #include "Estudiante.h"
 using namespace std;
 
-class Informacion
-{
+class Informacion{
 private:
     int Identificador;
-    *DTFecha Fecha;
+    DTFecha Fecha;
 
 public:
     Informacion(int id, DTFecha* fecha);
     //~Informacion();
     int getIdentificador();
-    *DTFecha getFecha();
+    DTFecha getFecha();
     virtual string toString();
-}
+};
+
+#endif

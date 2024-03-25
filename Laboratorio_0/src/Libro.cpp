@@ -1,4 +1,4 @@
-#include "Libro.h"
+#include "../inc/Libro.h"
 
 Libro::Libro(int id, DTFecha fecha, string titulo, set<string>& autores, string resumen):Informacion(id, fecha){
 	this->titulo = titulo;

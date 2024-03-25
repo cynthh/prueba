@@ -1,4 +1,6 @@
-#pragma once
+#ifndef PAGINAWEB_H
+#define PAGINAWEB_H
+
 #include<iostream>
 #include<stdlib.h>
 #include <string>
@@ -20,3 +22,4 @@ class PaginaWeb: public Informacion{
     void setText();
     String getText();
 };
+#endif

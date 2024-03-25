@@ -1,4 +1,4 @@
-#include "PaginaWeb.h"
+#include "../inc/PaginaWeb.h"
 #include <stl>
 
 PaginaWeb : PaginaWeb(string Titulo, Link, Text) : Informacion(id, DTFecha){

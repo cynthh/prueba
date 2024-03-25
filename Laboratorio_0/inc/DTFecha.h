@@ -1,17 +1,18 @@
-#pragma once
+#ifndef DTFECHA_H
+#define DTFECHA_H
+
 #include<iostream>
 #include<stdlib.h>
 #include <string>
-#include "Informacion.h"
-#include "DTInfoEstudiante.h"
+//#include "Informacion.h"
+//#include "DTInfoEstudiante.h"
 using namespace std;
 class DTFecha{
     private:
 	    int dia, mes, anio;
     public:
         DTFecha(int dia, int mes, int anio);
-        ~DTFecha();
         string toString();
-        int compararDTFechas(DTFecha fecha1, DTFecha fecha2);
 };
 
+#endif // DTFECHA_H

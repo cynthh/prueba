@@ -1,4 +1,4 @@
-#include "Informacion.h"
+#include "../inc/Informacion.h"
 
 Informacion::Informacion(int id, DTFecha* fecha){
 	this->id = id;

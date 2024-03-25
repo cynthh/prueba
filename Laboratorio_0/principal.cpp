@@ -1,6 +1,7 @@
-#pragma once
 #include <iostream>
-#include "Libro.h"
+#include "../inc/Libro.h"
+#include "../inc/DTFecha.h"
+#include <set>
 
 int main() {
     // Crear un conjunto de autores

@@ -1,4 +1,4 @@
-#include "Estudiante.h"
+#include "../inc/Estudiante.h"
 
 Estudiante::Estudiante(string nombre, int ci, string email){
 	this->ci = ci;
