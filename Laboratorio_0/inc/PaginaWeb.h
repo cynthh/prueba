@@ -14,13 +14,13 @@ class PaginaWeb: public Informacion{
     string Titulo, Link, Text;
     //Estudiante *GuardadoPor_PaginaWeb;
     public: 
+    PaginaWeb(string Titulo, string Link, string Text, int Identificador, DTFecha Fecha);
     string toString();
-    PaginaWeb(string Titulo, Link, Text, int Identificador, *DTFecha Fecha);
-    void setTitulo();
+    //void setTitulo();
     string getTitulo();
-    void setLink();
+    //void setLink();
     string getLink();
-    void setText();
+    //void setText();
     String getText();
 };
 #endif
