@@ -11,6 +11,7 @@ using namespace std;
 class chatGPT : public Informacion{
 private:
     string pregunta, respuesta;
+    Estudiante *GuardadoPor_chatGpt;
 public:
     chatGPT(int id, DTFecha* fecha, string pregunta, string respuesta);
     ~chatGPT();
@@ -19,5 +20,7 @@ public:
     void setPregunta(string);
     void setRespuesta(string);
     string toString();
+    void setId(int Id);
+    int getId(int id);
 };
 

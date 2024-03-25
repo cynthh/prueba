@@ -11,6 +11,7 @@ class Estudiante{
 	private: 
 		string nombre, email;
 		int ci;
+		Informacion *GuardadoPor;
 	public:
 		Estudiante(string nombre, int ci, string email);
 		~Estudiante();

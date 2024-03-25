@@ -10,6 +10,7 @@ using namespace std;
 class PaginaWeb: public Informacion{
     private:
     string Titulo, Link, Text;
+    Estudiante *GuardadoPor_PaginaWeb;
     public: 
     string toString();
     PaginaWeb(string Titulo, Link, Text, int Identificador, *DTFecha Fecha);
@@ -19,4 +20,6 @@ class PaginaWeb: public Informacion{
     string getLink();
     void setText();
     String getText();
+    void setId(int Id);
+    int getId(int id);
 };
