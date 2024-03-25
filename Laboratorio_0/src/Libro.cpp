@@ -23,7 +23,7 @@ string Libro::getResumen(){
 	return this->resumen;
 }
 
-string Libro::toString(){
+string Libro::toString() const override{
 	string autoresStr;
         for (const string& autor : autores) {
             autoresStr += autor + ", ";

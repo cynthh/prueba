@@ -1,7 +1,7 @@
 #include "../inc/PaginaWeb.h"
 #include <stl>
 
-PaginaWeb : PaginaWeb(string Titulo, Link, Text) : Informacion(id, DTFecha){
+PaginaWeb :: PaginaWeb(string Titulo, Link, Text) : Informacion(id, DTFecha){
     this->Titulo = Titulo;
     this->Link = Link;
     this->Text = Text;
