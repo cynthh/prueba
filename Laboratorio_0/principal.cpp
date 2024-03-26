@@ -45,11 +45,11 @@ Libro Informacion5(5, fecha5, "Applying UML and Patterns: An Introduction to Obj
 
 //Parte D
 
-cout << paginaWeb1.toString() << endl;
-cout << paginaWeb2.toString() << endl;
-cout << Informacion3.toString() << endl;
-cout << Informacion4.toString() << endl;
-cout << Informacion5.toString() << endl;
+cout << paginaWeb1.toString() +"\n"<< endl;
+cout << paginaWeb2.toString() +"\n"<< endl;
+cout << Informacion3.toString() +"\n"<< endl;
+cout << Informacion4.toString() +"\n"<< endl;
+cout << Informacion5.toString() +"\n"<< endl;
 
 
 //Fin parte D

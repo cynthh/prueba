@@ -1,4 +1,4 @@
-TARGET = myprog
+TARGET = principal
 OBJ_DIR = ../obj
 BIN_DIR = ../bin
 INC_DIR = ../inc
