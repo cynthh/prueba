@@ -14,13 +14,13 @@ string PaginaWeb::toString(){
 }
 
 string PaginaWeb::getTitulo(){
-    return this->Titulo;;
+    return this->Titulo;
 }
 
 string PaginaWeb::getLink(){
     return this->Link;
 }
 
-String PaginaWeb::getText(){
+string PaginaWeb::getText(){
     return this->Text;
 }

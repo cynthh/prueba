@@ -21,6 +21,6 @@ class PaginaWeb: public Informacion{
     //void setLink();
     string getLink();
     //void setText();
-    String getText();
+    string getText();
 };
 #endif

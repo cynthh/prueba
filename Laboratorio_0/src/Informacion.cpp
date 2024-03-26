@@ -1,18 +1,13 @@
 #include "../inc/Informacion.h"
-#include "Informacion.h"
 
-Informacion::Informacion(int id, DTFecha* fecha){
-	this->id = id;
-	this->fecha = fecha;
+Informacion::Informacion(int id, const DTFecha& fecha){
+	this->Identificador = id;
+	this->Fecha = fecha;
 }
 int Informacion::getIdentificador(){
-   return this->id;
+   return this->Identificador;
 }
 
 DTFecha Informacion::getFecha(){
-    return this->fecha;
-}
-
-string Informacion::toString(){
-    return " ";
+    return this->Fecha;
 }
