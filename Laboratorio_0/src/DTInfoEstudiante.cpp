@@ -32,8 +32,8 @@ public:
 Informacion **DTInfoEstudiante()::Guardado(Informacion *info1, Informacion *info2, Informacion *info3);
 {
 	Arr[0] = info1;
-	Arr[0] = info2;
-	Arr[0] = info3;
+	Arr[1] = info2;
+	Arr[2] = info3;
 	return Arr;
 }
 
