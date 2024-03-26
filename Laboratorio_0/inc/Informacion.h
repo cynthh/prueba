@@ -15,11 +15,11 @@ private:
     DTFecha Fecha;
 
 public:
-    Informacion(int id, DTFecha* fecha);
+    Informacion(int id, const DTFecha& fecha);
     //~Informacion();
     int getIdentificador();
     DTFecha getFecha();
-    virtual string toString();
+    virtual string toString() = 0;
 };
 
 #endif
