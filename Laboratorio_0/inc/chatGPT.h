@@ -4,7 +4,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include <string>
-#include <stl>
+#include <set>
 #include "DTFecha.h"
 #include "DTInfoEstudiante.h"
 #include "Informacion.h"
@@ -15,12 +15,12 @@ private:
     string pregunta, respuesta;
     //Estudiante *GuardadoPor_chatGpt;
 public:
-    chatGPT(int id, DTFecha* fecha, string pregunta, string respuesta);
+    chatGPT(int id, const DTFecha& fecha, string pregunta, string respuesta);
     ~chatGPT();
     string getPregunta();
     string getRespuesta();
-    void setPregunta(string);
-    void setRespuesta(string);
+    //void setPregunta(string);
+    //void setRespuesta(string);
     string toString();
 };
 

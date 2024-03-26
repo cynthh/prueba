@@ -9,10 +9,9 @@
 #include "Informacion.h"
 using namespace std;
 class DTInfoEstudiante{
-private:
-    int ci, identificadorInfo;
-    string NombreEst;
-public:
-    DTInfoEstudiante(int ci, int identificadorInfo, string NombreEst);
+    public:
+        int ci, identificadorInfo;
+        string NombreEst;
+        DTInfoEstudiante(int ci, int identificadorInfo, string NombreEst);
 };
 #endif

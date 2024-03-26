@@ -10,13 +10,13 @@
 using namespace std;
 
 class Informacion{
-private:
+protected:
     int Identificador;
     DTFecha Fecha;
 
 public:
     Informacion(int id, const DTFecha& fecha);
-    //~Informacion();
+    //virtual ~Informacion();
     int getIdentificador();
     DTFecha getFecha();
     virtual string toString() = 0;

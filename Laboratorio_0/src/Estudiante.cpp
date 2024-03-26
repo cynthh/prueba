@@ -35,5 +35,6 @@ string Estudiante::toString(){
 }
 
 set<string> Estudiante::listarInfo(DTFecha& Desde){
-
+	set<string> infoStrings;
+	return infoStrings;
 }

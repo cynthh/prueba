@@ -1,15 +1,14 @@
 #include "../inc/PaginaWeb.h"
-#include <stl>
-#include "PaginaWeb.h"
+#include "../inc/DTFecha.h"
 
-PaginaWeb::PaginaWeb(string Titulo, string Link, string Text, int Identificador, DTFecha Fecha): Informacion(id, DTFecha){
+PaginaWeb::PaginaWeb(int Identificador,const DTFecha& Fecha, string Titulo, string Link, string Text): Informacion(Identificador, Fecha){
     this->Titulo = Titulo;
     this->Link = Link;
     this->Text = Text;
 }
 
 string PaginaWeb::toString(){
-    return "PaginaWeb: " + to_string(getIdentificador(pagina)) +", "+ to_string(getFecha(pagina)) +", "+ this->Titulo +", "+ this->Link +", "+ this->Text +".";
+    return "PaginaWeb: " + to_string(getIdentificador()) +", "+ getFecha().toString() +", "+ this->Titulo +", "+ this->Link +", "+ this->Text +".";
     
 }
 

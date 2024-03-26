@@ -1,4 +1,12 @@
-#ifndef DTINFOESTUDIANTE_H
+#include "../inc/DTInfoEstudiante.h"
+
+
+DTInfoEstudiante::DTInfoEstudiante(int ci, int identificadorInfo, string NombreEst){
+	this->ci = ci;
+	this->identificadorInfo = identificadorInfo;
+	this->NombreEst = NombreEst;
+}
+/* #ifndef DTINFOESTUDIANTE_H
 #define DTINFOESTUDIANTE_H
 #include <iostream>
 #include <stdlib.h>
@@ -29,4 +37,4 @@ Informacion **DTInfoEstudiante()::Guardado(Informacion *info1, Informacion *info
 	return Arr;
 }
 
-#endif
+#endif */

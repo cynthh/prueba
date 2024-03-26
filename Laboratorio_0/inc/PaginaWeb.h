@@ -4,7 +4,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include <string>
-#include <stl>
+#include <set>
 #include "DTFecha.h"
 #include "DTInfoEstudiante.h"
 #include "Informacion.h"
@@ -14,13 +14,10 @@ class PaginaWeb: public Informacion{
     string Titulo, Link, Text;
     //Estudiante *GuardadoPor_PaginaWeb;
     public: 
-    PaginaWeb(string Titulo, string Link, string Text, int Identificador, DTFecha Fecha);
+    PaginaWeb(int Identificador,const DTFecha& Fecha, string Titulo, string Link, string Text);
     string toString();
-    //void setTitulo();
     string getTitulo();
-    //void setLink();
     string getLink();
-    //void setText();
     string getText();
 };
 #endif
