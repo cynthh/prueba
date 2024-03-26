@@ -38,3 +38,10 @@ set<string> Estudiante::listarInfo(DTFecha& Desde){
 	set<string> infoStrings;
 	return infoStrings;
 }
+
+Informacion** Estudiante::Guardado(Informacion *info1, Informacion *info2, Informacion *info3);{
+	Arr[0]=info1;
+Arr[0]=info2;
+Arr[0]=info3;
+return Arr;
+}
