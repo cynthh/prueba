@@ -15,7 +15,7 @@ class Estudiante{
 	private: 
 		string nombre, email;
 		int ci;
-		
+		*Informacion Arr[3];
 	public:
 		Estudiante(string nombre, int ci, string email);
 		//~Estudiante();
@@ -27,6 +27,6 @@ class Estudiante{
 		void setEmail(string email);
 		string toString();
 		set<string> listarInfo(DTFecha& Desde);
-
+		Informacion** Guardado(Informacion *info1, Informacion *info2, Informacion *info3);
 };
 #endif
