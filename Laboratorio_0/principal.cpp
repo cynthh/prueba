@@ -15,49 +15,42 @@ DTFecha fecha1(7, 3, 2024);
 DTFecha fecha2(5, 3, 2024);
 
 PaginaWeb paginaWeb1(1, fecha1 , "Programación 4 Guía Semana 1 (4/3)" , "https://eva.fing.edu.uy/pluginfile.php/468051/mod_resource/content/4/Guia01_P42024_IntroCBasicos.pdf" , "El objetivo de esta semana es contextualizar el paradigma de Orientación a Objetos (OO) en el marco de la Ingeniería de Software, así como comenzar a ver sus conceptos básicos y cómo éstos se implementan en C++.");
-
 PaginaWeb paginaWeb2(2, fecha2 , "Programación orientada a objetos" , "https://eva.fing.edu.uy/pluginfile.php/468051/mod_resource/content/4/Guia01_P42024_IntroCBasicos.pdf" ,  "La programación orientada a objetos (POO, en español) es un paradigma de programación que parte del concepto de \"objetos\" como base, los cuales contienen información en forma de campos (a veces también referidos como atributos o propiedades) y código en forma de métodos. Algunas características clave de la programación orientada a objetos son herencia, cohesión, abstracción, polimorfismo, acoplamiento y encapsulamiento.");
 
-cout << paginaWeb1.toString() << endl;
-cout << paginaWeb2.toString() << endl;
 
 //Fin de parte A
 
 
 //Parte B
 
-/* DTFecha fecha3(8, 3, 2024);
-DTFECHA fecha4(5, 3, 2024);
+DTFecha fecha3(8, 3, 2024);
+DTFecha fecha4(5, 3, 2024);
 
-ChatGPT Informacion3(3, fecha3 , "¿Qué es el polimorfismo en orientación a objetos?" , "El polimorfismo en programación orientada a objetos se refiere a la capacidad de un objeto de tomar múltiples formas. Puede ser estático, resuelto en tiempo de compilación, basado en la herencia, o dinámico, resuelto en tiempo de ejecución, asociado a interfaces o métodos abstractos. En esencia, permite que objetos de diferentes clases respondan a la misma interfaz de manera coherente, facilitando la flexibilidad y extensibilidad del código.");
-ChatGPT Informacion4(4, fecha4 ,"¿Qué es el acoplamiento en orientación a objetos?","El acoplamiento en programación orientada a objetos se refiere al grado
-de dependencia entre las clases o módulos de un sistema. Un bajo acoplamiento es
-deseable, ya que implica que las clases son independientes entre sí, lo que facilita la
-modificación, mantenimiento y reutilización del código. Por otro lado, un alto
-acoplamiento indica una fuerte interdependencia entre las clases, lo que puede hacer
-que el sistema sea más difícil de entender, modificar y mantener.");
+chatGPT Informacion3(3, fecha3 , "¿Qué es el polimorfismo en orientación a objetos?" , "El polimorfismo en programación orientada a objetos se refiere a la capacidad de un objeto de tomar múltiples formas. Puede ser estático, resuelto en tiempo de compilación, basado en la herencia, o dinámico, resuelto en tiempo de ejecución, asociado a interfaces o métodos abstractos. En esencia, permite que objetos de diferentes clases respondan a la misma interfaz de manera coherente, facilitando la flexibilidad y extensibilidad del código.");
+chatGPT Informacion4(4, fecha4 ,"¿Qué es el acoplamiento en orientación a objetos?","El acoplamiento en programación orientada a objetos se refiere al grado de dependencia entre las clases o módulos de un sistema. Un bajo acoplamiento es deseable, ya que implica que las clases son independientes entre sí, lo que facilita la modificación, mantenimiento y reutilización del código. Por otro lado, un alto acoplamiento indica una fuerte interdependencia entre las clases, lo que puede hacer que el sistema sea más difícil de entender, modificar y mantener.");
 
- */
+
 //Fin parte B
 
 
 //Parte C
 
-/* DTFecha fecha5(15, 3, 2024);
-Libro Informacion5(5, fecha5, "Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development" , "Craig Larman" , "Applying UML and Patterns is the world’s #1 business and college introduction to “thinking in objects”―and using that insight in real-world objectoriented analysis and design. Building on two widely acclaimed previous editions, Craig Larman has updated this book to fully reflect the new UML 2 standard, to help you master the art of object design, and to promote high-impact, iterative, and skillful agile modeling practices.");
- */
+set<string> autores = {"Craig Larman"};
+DTFecha fecha5(15, 3, 2024);
+Libro Informacion5(5, fecha5, "Applying UML and Patterns: An Introduction to Object-Oriented Analysis and Design and Iterative Development" , autores , "Applying UML and Patterns is the world´s #1 business and college introduction to “thinking in objects”―and using that insight in real-world objectoriented analysis and design. Building on two widely acclaimed previous editions, Craig Larman has updated this book to fully reflect the new UML 2 standard, to help you master the art of object design, and to promote high-impact, iterative, and skillful agile modeling practices.");
+
 
 // Fin parte C
 
 
 //Parte D
 
-/* cout << PaginaWeb1.toString() << endl;
-cout << PaginaWeb2.toString() << endl;
-cout << ChatGPT1.toString() << endl;
-cout << ChatGPT2.toString() << endl;
-cout << Libro1.toString() << endl;
- */
+cout << paginaWeb1.toString() << endl;
+cout << paginaWeb2.toString() << endl;
+cout << Informacion3.toString() << endl;
+cout << Informacion4.toString() << endl;
+cout << Informacion5.toString() << endl;
+
 
 //Fin parte D
 
