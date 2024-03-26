@@ -72,6 +72,20 @@ Estudiante Estudiante2 (“Betina Gonzalez” , “ 49891239” , “beg999@gmai
 //Parte F
 
 
+DTInfoEstudiante Estudiante1(52365899, 1 , 2 , 3 ,”Alex García”);
+Informacion *Registro1=Guardado(Informacion1, Informacion 2, Informacion3);
+
+DTInfoEstudiante Estudiante2(49891239 , 3 , 4 , 5 ,”Betina Gonzalez”);
+Informacion *Registro2=Guardado(Informacion3, Informacion4, Informacion5);
+
+
+//Fin Parte F
+
+
+//Parte G
+
+
+
 
 return 0;
 }
