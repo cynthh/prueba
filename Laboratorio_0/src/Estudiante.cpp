@@ -34,10 +34,17 @@ string Estudiante::toString(){
 	return "Nombre: " + nombre + ", CI: " + to_string(ci) + ", Email: " + email;
 }
 
-set<string> Estudiante::listarInfo(DTFecha& Desde){
-	set<string> infoStrings;
-	return infoStrings;
+string Estudiante::listarInfo(DTFecha& Desde, Informacion* Estudiante.Guardado);{
+	//DesdeFecha
+int i=0;
+	if (DesdeFecha(Informacion[i].getFecha,Desde))>1
+	{
+		return Informacion[i].toString()
+		i=i+1;
+	}
 }
+
+
 
 Informacion** Estudiante::Guardado(Informacion *info1, Informacion *info2, Informacion *info3);{
 	Arr[0]=info1;
