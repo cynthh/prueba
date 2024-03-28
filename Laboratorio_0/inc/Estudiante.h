@@ -30,7 +30,8 @@ class Estudiante{
 		string toString();
 
 		void guardarInformacion(Informacion* info);
-		set<string> listarInfo(DTFecha& Desde);
+		void eliminarLinkInformacion(int id);
+		set<string> listarInfo(DTFecha Desde);
 		//set<DTInfoEstudiante> buscarTermino(const string& termino);
 };
 #endif

@@ -8,10 +8,9 @@
 #include "inc/Estudiante.h"
 #include <set>
 
-int main()
-{
-
+int main(){
 	// Parte A
+
 	DTFecha fecha1(7, 3, 2024);
 	DTFecha fecha2(5, 3, 2024);
 
@@ -70,12 +69,18 @@ int main()
 	estudiante2.guardarInformacion(&Informacion4);
 	estudiante2.guardarInformacion(&Informacion5);
 
-	cout << "\n hola putitos" << endl;
+	cout << "\n hola sucios" << endl;
 	set<string> infoStrings = estudiante1.listarInfo(fecha3);
+
 	for(const string& info : infoStrings){
 		cout << info << endl;
 	}	
-	
+
+	estudiante1.eliminarLinkInformacion(Informacion1.getIdentificador());
+	estudiante1.eliminarLinkInformacion(Informacion2.getIdentificador());
+	estudiante1.eliminarLinkInformacion(Informacion3.getIdentificador());
+
+
 	/* DTInfoEstudiante Estudiante1(52365899, 1 , 2 , 3 , "Alex García");
 	Informacion *Registro1 = Guardado(Informacion1, Informacion2, Informacion3);
 

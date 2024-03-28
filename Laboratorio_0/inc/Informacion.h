@@ -13,7 +13,7 @@ class Informacion{
 protected:
     int Identificador;
     DTFecha Fecha;
-
+    
 public:
     Informacion(int id, const DTFecha& fecha);
     //virtual ~Informacion();
