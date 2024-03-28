@@ -34,21 +34,23 @@ string Estudiante::toString(){
 	return "Nombre: " + nombre + ", CI: " + to_string(ci) + ", Email: " + email;
 }
 
-string Estudiante::listarInfo(DTFecha& Desde, Informacion* Estudiante.Guardado);{
-	//DesdeFecha
-int i=0;
-	if (DesdeFecha(Informacion[i].getFecha,Desde))>1
-	{
-		return Informacion[i].toString()
-		i=i+1;
-	}
+void Estudiante::guardarInformacion(Informacion *info){
+	InformacionGuardada.push_back(info);
 }
 
+set<string> Estudiante::listarInfo(DTFecha &Desde){
+	set<string> infoStrings;
 
-
-Informacion** Estudiante::Guardado(Informacion *info1, Informacion *info2, Informacion *info3);{
-	Arr[0]=info1;
-	Arr[1]=info2;
-	Arr[2]=info3;
-return Arr;
+    for (const auto& info : InformacionGuardada) {
+		DTFecha fecha = info->getFecha();
+         if (fecha.anio > Desde.anio || (fecha.anio == Desde.anio && fecha.mes >= Desde.mes) ||
+                (fecha.anio == Desde.anio && fecha.mes == Desde.mes && fecha.dia >= Desde.dia)) {
+                infoStrings.insert(info->toString());
+            }
+        }
+    return infoStrings;
 }
+
+/* set<DTInfoEstudiante> Estudiante::buscarTermino(const string &termino){
+    return set<DTInfoEstudiante>();
+}  */

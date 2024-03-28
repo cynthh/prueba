@@ -15,8 +15,8 @@ int main()
 	DTFecha fecha1(7, 3, 2024);
 	DTFecha fecha2(5, 3, 2024);
 
-	PaginaWeb paginaWeb1(1, fecha1, "Programación 4 Guía Semana 1 (4/3)", "https://eva.fing.edu.uy/pluginfile.php/468051/mod_resource/content/4/Guia01_P42024_IntroCBasicos.pdf", "El objetivo de esta semana es contextualizar el paradigma de Orientación a Objetos (OO) en el marco de la Ingeniería de Software, así como comenzar a ver sus conceptos básicos y cómo éstos se implementan en C++.");
-	PaginaWeb paginaWeb2(2, fecha2, "Programación orientada a objetos", "https://eva.fing.edu.uy/pluginfile.php/468051/mod_resource/content/4/Guia01_P42024_IntroCBasicos.pdf", "La programación orientada a objetos (POO, en español) es un paradigma de programación que parte del concepto de \"objetos\" como base, los cuales contienen información en forma de campos (a veces también referidos como atributos o propiedades) y código en forma de métodos. Algunas características clave de la programación orientada a objetos son herencia, cohesión, abstracción, polimorfismo, acoplamiento y encapsulamiento.");
+	PaginaWeb Informacion1(1, fecha1, "Programación 4 Guía Semana 1 (4/3)", "https://eva.fing.edu.uy/pluginfile.php/468051/mod_resource/content/4/Guia01_P42024_IntroCBasicos.pdf", "El objetivo de esta semana es contextualizar el paradigma de Orientación a Objetos (OO) en el marco de la Ingeniería de Software, así como comenzar a ver sus conceptos básicos y cómo éstos se implementan en C++.");
+	PaginaWeb Informacion2(2, fecha2, "Programación orientada a objetos", "https://eva.fing.edu.uy/pluginfile.php/468051/mod_resource/content/4/Guia01_P42024_IntroCBasicos.pdf", "La programación orientada a objetos (POO, en español) es un paradigma de programación que parte del concepto de \"objetos\" como base, los cuales contienen información en forma de campos (a veces también referidos como atributos o propiedades) y código en forma de métodos. Algunas características clave de la programación orientada a objetos son herencia, cohesión, abstracción, polimorfismo, acoplamiento y encapsulamiento.");
 
 	// Fin de parte A
 
@@ -40,9 +40,9 @@ int main()
 
 	// Parte D
 
-	cout << paginaWeb1.toString() + "\n"
+	cout << Informacion1.toString() + "\n"
 		 << endl;
-	cout << paginaWeb2.toString() + "\n"
+	cout << Informacion2.toString() + "\n"
 		 << endl;
 	cout << Informacion3.toString() + "\n"
 		 << endl;
@@ -55,14 +55,27 @@ int main()
 
 	// Parte E
 
-	/* Estudiante Estudiante1("Alex García", 52365899,"ag5678@gmail.com");
-	Estudiante Estudiante2 ("Betina Gonzalez" , 49891239 , "beg999@gmail.com");
-	 */
+	Estudiante estudiante1("Alex García", 52365899,"ag5678@gmail.com");
+	Estudiante estudiante2 ("Betina Gonzalez" , 49891239 , "beg999@gmail.com");
+	
 
 	// Fin de Parte E
 
 	// Parte F
+	estudiante1.guardarInformacion(&Informacion1);
+	estudiante1.guardarInformacion(&Informacion2);
+	estudiante1.guardarInformacion(&Informacion3);
 
+	estudiante2.guardarInformacion(&Informacion3);
+	estudiante2.guardarInformacion(&Informacion4);
+	estudiante2.guardarInformacion(&Informacion5);
+
+	cout << "\n hola putitos" << endl;
+	set<string> infoStrings = estudiante1.listarInfo(fecha3);
+	for(const string& info : infoStrings){
+		cout << info << endl;
+	}	
+	
 	/* DTInfoEstudiante Estudiante1(52365899, 1 , 2 , 3 , "Alex García");
 	Informacion *Registro1 = Guardado(Informacion1, Informacion2, Informacion3);
 

@@ -24,5 +24,5 @@ string chatGPT::getRespuesta() {
     this->respuesta = respuesta;
  } */
  string chatGPT::toString(){
-     return "chatGPT: " + to_string(getIdentificador()) + "," + getFecha().toString() + "," + this->pregunta + "," + this->respuesta;
+     return "chatGPT: " + to_string(getIdentificador()) + ", " + getFecha().toString() + ", " + this->pregunta + ", " + this->respuesta;
  }
