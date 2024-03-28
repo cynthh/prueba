@@ -8,9 +8,8 @@
 //#include "DTInfoEstudiante.h"
 using namespace std;
 class DTFecha{
-    private:
-	    int dia, mes, anio;
     public:
+        int dia, mes, anio;
         DTFecha(int dia, int mes, int anio);
         string toString();
 };

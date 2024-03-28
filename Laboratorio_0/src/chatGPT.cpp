@@ -1,6 +1,6 @@
 #include "../inc/chatGPT.h"
 
-chatGPT::chatGPT(int id, DTFecha* fecha, string pregunta, string respuesta) : Informacion(id, fecha){
+chatGPT::chatGPT(int id,const DTFecha& fecha, string pregunta, string respuesta) : Informacion(id, fecha){
     this->pregunta = pregunta;
     this->respuesta = respuesta;
     
@@ -17,12 +17,12 @@ string chatGPT::getPregunta() {
 string chatGPT::getRespuesta() {
     return this->respuesta;
 }
-void chatGPT::setPregunta(string pregunta) {
+/* void chatGPT::setPregunta(string pregunta) {
     this->pregunta = pregunta;
-}
-void chatGPT::setRespuesta(string respuesta) {
+} */
+/* void chatGPT::setRespuesta(string respuesta) {
     this->respuesta = respuesta;
- }
+ } */
  string chatGPT::toString(){
-     return "chatGPT: " + to_string(getIdentificador()) + "," + getFecha()->toString() + "," + this->pregunta + "," + this->respuesta;
+     return "chatGPT: " + to_string(getIdentificador()) + ", " + getFecha().toString() + ", " + this->pregunta + ", " + this->respuesta;
  }

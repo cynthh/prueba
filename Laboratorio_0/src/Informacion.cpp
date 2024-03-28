@@ -1,12 +1,17 @@
 #include "../inc/Informacion.h"
 
-Informacion::Informacion(int id, DTFecha* fecha){
-	this->id = id;
-	this->fecha = fecha;
+/* Informacion::Informacion(int id, const DTFecha& fecha){
+	this->Identificador = id;
+	this->Fecha = DTFecha(fecha.dia, fecha.mes, fecha.anio); 
+} */
+Informacion::Informacion(int id, const DTFecha& fecha) : Fecha(fecha.dia, fecha.mes, fecha.anio) {
+    this->Identificador = id;
 }
-int getIdentificador(){
-	return this->id;
+
+int Informacion::getIdentificador(){
+   return this->Identificador;
 }
-DTFecha* getFecha(){
-	return this->fecha;
+
+DTFecha Informacion::getFecha(){
+    return this->Fecha;
 }

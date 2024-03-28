@@ -17,7 +17,7 @@ private:
     set<string> autores;
     //Estudiante *GuardadoPor_Libro;
 public:
-    Libro(int id, DTFecha fecha, string titulo, set<string>& autores, string resumen);
+    Libro(int id, const DTFecha& fecha, string titulo, set<string>& autores, string resumen);
     string getTitulo();
     set<string> getAutores();
     string getResumen();

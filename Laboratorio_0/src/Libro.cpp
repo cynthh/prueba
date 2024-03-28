@@ -1,13 +1,9 @@
 #include "../inc/Libro.h"
 
-Libro::Libro(int id, DTFecha fecha, string titulo, set<string>& autores, string resumen):Informacion(id, fecha){
+Libro::Libro(int id, const DTFecha& fecha, string titulo, set<string>& autores, string resumen):Informacion(id, fecha){
 	this->titulo = titulo;
 	this->autores = autores;
 	this->resumen = resumen;
-}
-
-Libro::~Libro(){
-	
 }
 
 string Libro::getTitulo(){
@@ -15,7 +11,7 @@ string Libro::getTitulo(){
 }
 
 
-const set<string>& Libro::getAutores(){
+set<string> Libro::getAutores(){
 	return this->autores;
 }
 

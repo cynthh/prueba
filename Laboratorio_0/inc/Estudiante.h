@@ -4,8 +4,10 @@
 #include<iostream>
 #include<stdlib.h>
 #include <set>
+#include <vector>
 #include <string>
 #include "DTFecha.h"
+#include "DTInfoEstudiante.h"
 #include "Informacion.h"
 using namespace std;
 
@@ -15,7 +17,7 @@ class Estudiante{
 	private: 
 		string nombre, email;
 		int ci;
-		//Informacion *GuardadoPor;
+		vector<Informacion*> InformacionGuardada;
 	public:
 		Estudiante(string nombre, int ci, string email);
 		//~Estudiante();
@@ -26,9 +28,10 @@ class Estudiante{
 		string getEmail();
 		void setEmail(string email);
 		string toString();
-		//void setId(int Id);
-    	//int getId(int id);
-		set<string> listarInfo(DTFecha& Desde);
 
+		void guardarInformacion(Informacion* info);
+		void eliminarLinkInformacion(int id);
+		set<string> listarInfo(DTFecha Desde);
+		//set<DTInfoEstudiante> buscarTermino(const string& termino);
 };
 #endif

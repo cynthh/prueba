@@ -34,6 +34,31 @@ string Estudiante::toString(){
 	return "Nombre: " + nombre + ", CI: " + to_string(ci) + ", Email: " + email;
 }
 
-set<string> Estudiante::listarInfo(DTFecha& Desde){
-
+void Estudiante::guardarInformacion(Informacion *info){
+	InformacionGuardada.push_back(info);
 }
+
+void Estudiante::eliminarLinkInformacion(int id){
+	for(auto it = InformacionGuardada.begin(); it != InformacionGuardada.end(); it++){
+		if((*it)->getIdentificador() == id){
+			delete *it;
+			InformacionGuardada.erase(it);
+			break;
+		}
+}
+}
+set<string> Estudiante::listarInfo(DTFecha Desde){
+	set<string> infoStrings;
+    for (const auto& info : InformacionGuardada) {
+		DTFecha fecha = info->getFecha();
+         if ((fecha.anio > Desde.anio) || (fecha.anio == Desde.anio && fecha.mes > Desde.mes) ||
+                (fecha.anio == Desde.anio && fecha.mes == Desde.mes && fecha.dia >= Desde.dia)) {
+                infoStrings.insert(info->toString());
+            }
+        }
+    return infoStrings;
+}
+
+/* set<DTInfoEstudiante> Estudiante::buscarTermino(const string &termino){
+    return set<DTInfoEstudiante>();
+}  */
