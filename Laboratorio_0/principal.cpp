@@ -71,11 +71,14 @@ int main(){
 
 	cout << "\n hola sucios" << endl;
 	set<string> infoStrings = estudiante1.listarInfo(fecha3);
-
 	for(const string& info : infoStrings){
 		cout << info << endl;
 	}	
 
+	set<string> infoStrings2 = estudiante2.listarInfo(fecha3);
+	for(const string& info : infoStrings){
+		cout << info << endl;
+	}
 	estudiante1.eliminarLinkInformacion(Informacion1.getIdentificador());
 	estudiante1.eliminarLinkInformacion(Informacion2.getIdentificador());
 	estudiante1.eliminarLinkInformacion(Informacion3.getIdentificador());
